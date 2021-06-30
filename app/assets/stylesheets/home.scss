@@ -255,3 +255,15 @@ body{
   opacity: 0;
   transition: 1s all ease-in-out;
 }
+
+.arrow{
+  font-size: 120px;
+  position: absolute;
+  /* position arrow */
+  top: 90px;
+  /* set arrow to the right */
+  right: 0;
+  color: lightgray;
+  opacity: .5;
+  cursor: pointer;
+}
