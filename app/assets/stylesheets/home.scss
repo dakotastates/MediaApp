@@ -1,0 +1,110 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+*{
+  margin: 0;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+  /* Black navbar at the top */
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+
+.navbar-container{
+  /* all items will be horizontal */
+  display: flex;
+  align-items: center;
+  /* add padding to display navbar items hidden under sidebar */
+  padding: 0 50px;
+  /* container height of navbar */
+  height: 100%;
+  color: white;
+  font-family: 'San', sans-serif;
+}
+
+.logo-container{
+  flex: 1;
+}
+
+.logo{
+  font-size: 30px;
+  color: #4dbf00;
+}
+
+.menu-container{
+  /* 6 times larger than logo-container */
+  flex: 6;
+}
+
+.menu-list{
+  /* makes horizontal */
+  display: flex;
+  /* removes dot style from list */
+  list-style: none;
+}
+
+.menu-list-item{
+  /* adds a margin around list items */
+  margin-right: 30px;
+}
+
+.menu-list-item.active{
+  font-weight: bold;
+}
+
+.profile-container{
+  flex: 2;
+  display: flex;
+  align-items: center;
+  /* moves profile content to the right */
+  justify-content: flex-end;
+}
+
+.profile-text-container{
+  /* sets margin on profile but text only */
+  margin: 0 20px;
+}
+
+.profile-picture{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  /* makes image not look smashed */
+  object-fit: cover;
+}
+
+.toggle{
+  /* create toggle style */
+  width: 40px;
+  height: 20px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  /* puts a space around the sun and moon icons */
+  justify-content: space-around;
+  /* so toggle ball will display */
+  position: relative;
+}
+
+.toggle-icon{
+  /* allows icons to show */
+  color: goldenrod;
+}
+
+.toggle-ball{
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  position: absolute;
+  right: 1px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s ease all
+}
