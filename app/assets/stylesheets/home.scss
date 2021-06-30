@@ -133,3 +133,40 @@ body{
   /* space around icons */
   margin-bottom: 40px;
 }
+
+.container{
+  background-color: #151515;
+  /* calculate the height to adjust for navbar */
+  min-height: calc(100vh - 50px);
+  color: white;
+}
+
+.content-container{
+  /* adjust margin to account for sidebar */
+  margin-left: 50px;
+}
+
+.featured-content{
+  height: 50vh;
+  padding: 50px;
+}
+
+.featured-title{
+  width: 200px;
+}
+
+.featured-desc{
+  width: 500px;
+  color: lightgrey;
+  margin: 30px 0;
+}
+
+.featured-button{
+  background-color: #4dbf00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
