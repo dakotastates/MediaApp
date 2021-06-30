@@ -30,3 +30,20 @@ arrows.forEach((arrow, i)=>{
     }
   })
 })
+
+// TOGGLE
+
+// activate toggle ball for light and dark style
+// select the toggle ball
+const ball = document.querySelector(".toggle-ball");
+// select all containers needing to be changed
+const items = document.querySelectorAll(".container, .movie-list-title, .navbar-container, .sidebar, .left-menu-icon, .toggle");
+
+// when the toggle ball is clicked
+ball.addEventListener("click",()=>{
+  items.forEach(item=>{
+    item.classList.toggle("active")
+  })
+  // when ball is clicked change ball color when active
+  ball.classList.toggle("active")
+})
