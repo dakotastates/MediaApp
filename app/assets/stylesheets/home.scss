@@ -256,13 +256,25 @@ body{
   transition: 1s all ease-in-out;
 }
 
-.arrow{
+.arrow-right{
   font-size: 120px;
   position: absolute;
   /* position arrow */
   top: 90px;
   /* set arrow to the right */
   right: 0;
+  color: lightgray;
+  opacity: .5;
+  cursor: pointer;
+}
+
+.arrow-left{
+  font-size: 120px;
+  position: absolute;
+  /* position arrow */
+  top: 90px;
+  /* set arrow to the right */
+  left: 0;
   color: lightgray;
   opacity: .5;
   cursor: pointer;
@@ -296,4 +308,11 @@ body{
 .toggle-ball.active {
   background-color: white;
   transform: translateX(-20px);
+}
+
+/* adapt for changing/ smaller screens */
+@media only screen and (max-width: 940px){
+  .menu-container{
+    display: none;
+  }
 }
