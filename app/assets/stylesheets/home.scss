@@ -69,6 +69,8 @@ body{
 .profile-text-container{
   /* sets margin on profile but text only */
   margin: 0 20px;
+  float: left;
+  overflow: hidden;
 }
 
 .profile-picture{
@@ -78,6 +80,50 @@ body{
   /* makes image not look smashed */
   object-fit: cover;
 }
+
+// Dropdown
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.profile-text-container .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar li:hover, .profile-text-container:hover .dropbtn {
+  text-decoration: underline;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.profile-text-container:hover .dropdown-content {
+  display: block;
+}
+
+// Toggle
 
 .toggle{
   /* create toggle style */
@@ -289,6 +335,11 @@ body{
 }
 
 .navbar-container.active {
+  background-color: white;
+  color: black;
+}
+
+.dropbtn.active {
   background-color: white;
   color: black;
 }

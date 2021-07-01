@@ -70,7 +70,7 @@ arrowsRight.forEach((arrow, i)=>{
 // select the toggle ball
 const ball = document.querySelector(".toggle-ball");
 // select all containers needing to be changed
-const items = document.querySelectorAll(".container, .movie-list-title, .navbar-container, .sidebar, .left-menu-icon, .toggle");
+const items = document.querySelectorAll(".container, .movie-list-title, .navbar-container, .dropbtn, .sidebar, .left-menu-icon, .toggle");
 
 // when the toggle ball is clicked
 ball.addEventListener("click",()=>{
