@@ -73,6 +73,18 @@ body{
   overflow: hidden;
 }
 
+.profile-login-text{
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  text-decoration: none;
+}
+
 .profile-picture{
   width: 32px;
   height: 32px;
@@ -102,7 +114,7 @@ body{
   margin: 0;
 }
 
-.navbar li:hover, .profile-text-container:hover .dropbtn {
+.navbar li:hover, .profile-login-text:hover, .profile-text-container:hover .dropbtn {
   text-decoration: underline;
 }
 

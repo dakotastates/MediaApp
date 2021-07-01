@@ -12,23 +12,31 @@
       </ul>
     </div>
     <div class="profile-container">
-      <img class="profile-picture" src="https://www.edmundsgovtech.com/wp-content/uploads/2020/01/default-picture_0_0.png" alt=""/>
-      <div class="profile-text-container">
-        <button class="dropbtn">
-          <span class="profile-text">Profile</span>
-          <i class="fas fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#">Account</a>
-          <a href="#">Logout</a>
+      <% if user_signed_in? %>
+        <img class="profile-picture" src="https://www.edmundsgovtech.com/wp-content/uploads/2020/01/default-picture_0_0.png" alt=""/>
+        <div class="profile-text-container">
+          <button class="dropbtn">
+            <span class="profile-text">Profile</span>
+            <i class="fas fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Account</a>
+            <%= link_to "Logout", destroy_user_session_path, :method=>'delete'%>
+          </div>
         </div>
-      </div>
+      <% else %>
+        <div class="profile-text-container">
+          <%= link_to "login", new_user_session_path, :class => "profile-login-text" %>
+        </div>
+      <% end %>
+
       <div class="toggle">
         <i class="fas fa-moon toggle-icon"></i>
         <i class="fas fa-sun toggle-icon"></i>
         <div class="toggle-ball"></div>
       </div>
     </div>
+
   </div>
 </div>
 
